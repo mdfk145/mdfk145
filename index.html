@@ -1,0 +1,7 @@
+function payNow() {
+  const upiId = "7050023450@okbizaxis";
+  const payeeName = "Safe Shop";
+  const amount = "1"; // Change amount if needed
+  const upiLink = `upi://pay?pa=${upiId}&pn=${payeeName}&am=${amount}&cu=INR`;
+  window.location.href = upiLink; // FIXED line
+}
